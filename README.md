@@ -114,3 +114,4 @@ Desenvolvido pela equipe **Phantom Thieves** © 2025
 ---
 
 **Nota**: Black Phantom não é afiliado, patrocinado ou endossado pelo WhatsApp Inc.
+###### NOTA: A EXTENSÃO NÃO ESTÁ FUNCIONANDO CORRETAMENTE. NÃO ESTÁ ENVIANDO AS MENSAGENS AUTOMATICAMENTE.
