@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Phantom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <style>
+    body {
+      width: 300px;
+      background-color: #1E1E2E;
+      color: white;
+      font-family: 'Fira Code', monospace;
+    }
+    .btn {
+      background-color: #302D41;
+      border: 1px solid #6E6C7E;
+      color: white;
+      padding: 8px 16px;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background-color: #6E6C7E;
+    }
+    .title {
+      color: #BB9AF7;
+      font-weight: bold;
+    }
+    .status {
+      color: #7DCFFF;
+    }
+  </style>
+</head>
+<body class="p-4">
+  <div class="flex items-center justify-between mb-4">
+    <h1 class="title text-xl">Black Phantom</h1>
+    <img src="images/phantom.png" alt="Logo" class="w-8 h-8">
+  </div>
+  
+  <div class="mb-4">
+    <p class="status text-sm mb-2">Status: <span id="status">Desconectado</span></p>
+    <p class="text-sm">Acesse o WhatsApp Web para iniciar.</p>
+  </div>
+  
+  <div class="flex flex-col gap-2">
+    <button id="openPanel" class="btn rounded">Abrir Painel de Controle</button>
+    <button id="aboutBtn" class="btn rounded">Sobre</button>
+  </div>
+  
+  <div class="mt-4 text-xs text-gray-400 text-center">
+    <p>Phantom Thieves &copy; 2025</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

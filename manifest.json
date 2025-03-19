@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Black Phantom",
+  "version": "1.0.0",
+  "description": "Uma extensão para monitorar grupos do WhatsApp Web e enviar mensagens de boas-vindas automaticamente para novos membros",
+  "author": "Phantom Thieves",
+  "icons": {
+    "16": "images/favicon.png",
+    "48": "images/favicon.png",
+    "128": "images/phantom.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/favicon.png",
+      "48": "images/favicon.png",
+      "128": "images/phantom.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "scripting",
+    "tabs",
+    "notifications",
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*", "panel.html", "panel.js", "panel.css"],
+      "matches": ["https://web.whatsapp.com/*"]
+    }
+  ]
+}
